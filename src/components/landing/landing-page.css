@@ -1,0 +1,381 @@
+/*--- landing page ---*/
+
+.log-reg-area > h2 {
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+    font-family: inherit;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.land-featurearea {
+    background: #1fb6ff none repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.land-meta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.land-meta > h1 {
+    font-family: hobo std;
+}
+
+.land-meta > p {
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.log-reg-area > p {
+    color: #878787;
+    font-size: 14px;
+}
+
+.friend-logo {
+    display: inline-block;
+    width: 100%;
+}
+
+.friend-logo > span {
+    font-family: hobo std;
+    font-size: 200px;
+    position: relative;
+}
+
+.friend-logo > span::before,
+.friend-logo > span::after {
+    background: #0a98dc none repeat scroll 0 0;
+    border: 16px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    content: "";
+    height: 180px;
+    left: -42px;
+    position: absolute;
+    top: 20px;
+    width: 180px;
+    z-index: -1;
+}
+
+.land-meta > a.folow-me:hover {
+    text-shadow: 0 1px 1px #454545;
+}
+
+.login-reg-bg {
+    background: #f4f7f6 none repeat scroll 0 0;
+    float: left;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.log-reg-area {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 35px #e2e2e2;
+    display: block;
+    float: none;
+    left: 50%;
+    padding: 35px 55px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 505px;
+}
+
+.log-reg-area form .checkbox {
+    display: inline-block;
+    width: 50%;
+}
+
+.log-reg-area form .forgot-pwd,
+.log-reg-area form .already-have {
+    display: inline-block;
+    font-size: 14px;
+    text-align: right;
+    width: 48.9%;
+}
+
+.log-reg-area form .forgot-pwd:hover,
+.log-reg-area form .already-have:hover {
+    text-decoration: underline;
+}
+
+.log-reg-area .checkbox label,
+.form-radio label {
+    color: #999;
+    font-size: 13px;
+}
+
+.submit-btns {
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form-radio > .radio {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 20%;
+}
+
+.form-radio {
+    margin: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.form-group  input {
+    display: block;
+    background: 0 0;
+    padding: .125rem .125rem .0625rem;
+    font-size: 1rem;
+    border-width: 0;
+    border-color: transparent;
+    line-height: 1.9;
+    width: 100%;
+    color: transparent;
+    transition: all .28s ease;
+    box-shadow: none;
+    height: 1.9rem
+}
+
+.focused  {
+    color: #088dcd !important;
+    font-size: .8rem !important;
+    top: -1rem !important;
+    left: 0 !important;
+}
+
+.form-group  input:focus {
+    color: #2a2a2a;
+    outline: 0;
+}
+
+.form-group input:focus ~ .control-label {
+    color: #088dcd;
+    font-size: .8rem;
+    top: -1rem;
+    left: 0;
+}
+.form-group .control-label {
+    position: absolute;
+    top: .25rem;
+    pointer-events: none;
+    padding-left: .125rem;
+    z-index: 1;
+    color: #b7b7b7;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all .28s ease;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+input {
+    overflow: visible;
+    margin: 0;
+    font-family: inherit;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.control-label {
+    position: absolute;
+    top: .25rem;
+    pointer-events: none;
+    padding-left: .125rem;
+    z-index: 1;
+    color: #b7b7b7;
+    font-size: 1rem;
+    font-weight: 400;
+    -webkit-transition: all .28s ease;
+    transition: all .28s ease;
+}
+
+.mtrl-select {
+    position: relative;
+    border-bottom: .0625rem solid #e1e8ed;
+    display: block;
+}
+
+.mtrl-select::before {
+    content: '';
+    height: .125rem;
+    width: 0;
+    left: 50%;
+    bottom: -.0625rem;
+    position: absolute;
+    background: #088dcd;;
+    transition: left .28s ease,width .28s ease;
+    z-index: 2;
+}
+
+.checkbox {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.checkbox label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 25px;
+    text-align: left;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.checkbox input {
+    width: auto;
+    opacity: .00000001;
+    position: absolute;
+    left: 0;
+}
+.checkbox input:checked~.check-box {
+    color: #088dcd;
+}
+
+
+.checkbox .check-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    z-index: 0;
+    border: .125rem solid currentColor;
+    border-radius: .0625rem;
+    transition: border-color .28s ease;
+}
+
+.checkbox input:checked~.check-box::before {
+    height: 1.2rem;
+    transition-delay: .28s;
+}
+.checkbox input:checked~.check-box::after, .checkbox input:checked~.check-box::before {
+    opacity: 1;
+    transition: height .28s ease;
+}
+
+.checkbox .check-box::before {
+    top: .65rem;
+    left: .38rem;
+    transform: rotate(-135deg);
+    box-shadow: 0 0 0 0.0625rem #fff;
+}
+.checkbox .check-box::after, .checkbox .check-box::before {
+    position: absolute;
+    width: .2rem;
+    background-color: #088dcd;
+    display: block;
+    transform-origin: left top;
+    border-radius: .25rem;
+    content: '';
+}
+
+.checkbox input:checked~.check-box::after {
+    height: .5rem;
+}
+
+.checkbox input:checked~.check-box::after {
+    opacity: 1;
+    transition: height .28s ease;
+}
+
+.checkbox .check-box::after {
+    top: .3rem;
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.checkbox .check-box::after {
+    position: absolute;
+    width: .2rem;
+    background-color: #088dcd;
+    display: block;
+    transform-origin: left top;
+    border-radius: .25rem;
+    content: '';
+}
+
+.submit-btns {
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.mtr-btn {
+    position: relative;
+    background: currentColor;
+    border: 1px solid currentColor;
+    font-size: 16px;
+    color: #4f93ce;
+    margin-top: 10px;
+    padding: 7px 30px;
+    transition: background-color .28s ease,color .28s ease,box-shadow .28s ease,-webkit-box-shadow .28s ease;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+button, html [type=button] {
+    -webkit-appearance: button;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.mtr-btn:hover {
+    color: #088dcd;
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%), 0 3px 5px -1px rgb(0 0 0 / 20%);
+}
+
+.mtr-btn span,  .mtr-btn span > a {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.signin {
+    margin-right: 10px !important;
+}
+
+.log-reg-area.reg {
+    display: block;
+}
+
+.login-reg-bg.show .log-reg-area.reg {
+    display: block;
+}
+
+.login-reg-bg.show .log-reg-area.sign {
+    display: none;
+}
